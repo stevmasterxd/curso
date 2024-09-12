@@ -2,26 +2,28 @@
 ini_set('declare(strict_types', '1');
 function calcularImpuesto(float $basePrice, float $taxPercentage): float
 {
-    $tax = $basePrice * ($taxPercentage / 100);
-    return $basePrice + $tax;
+   return $basePrice * ($taxPercentage / 100);
+    
 }
 //echo (calcularImpuesto("12.6" , "1.60")).  "\n";
 
 function calculateDiscount(float $basePrice, float $discountPercentage): float
 {
-    $discount = $basePrice * ($discountPercentage / 100);
-    return $basePrice - $discount;
+    return $basePrice * ($discountPercentage / 100);  
 }
 //echo (calculateDiscount("12.6" , "1.10")) .  "\n";
 
-function calculateTotal($baseprice , $taxpercentage , $discountpercentage) : float
+function calculateTotal(float $basePrice , float $taxPercentage , float $discountPercentage) : float
 {
-    $tax = calcularImpuesto ($baseprice , $taxpercentage);
-    $discount = calculateDiscount ($baseprice, $discountpercentage);
-    return $baseprice - $discount + $tax;
+    $tax = calcularImpuesto($basePrice , $taxPercentage);
+    //tax = 45.88
+    $discount = calculateDiscount ($basePrice, $discountPercentage);
+    //discount =44.94
+    return ($basePrice - $discount) + $tax;
 
 }
-echo "total page: " . calculateTotal (45.3 , 0.80 , 1.30) .  "\n";
+//echo "total page: " . calcularImpuesto(45.3 , 1.30) .  "\n";
+echo "total page: " . calculateTotal (45.3 , 1.30 , 0.80) .  "\n";
 
 /*function main() 
 {
