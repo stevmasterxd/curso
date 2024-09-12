@@ -20,7 +20,6 @@ function calculateTotal(float $basePrice , float $taxPercentage , float $discoun
     $discount = calculateDiscount ($basePrice, $discountPercentage);
     //discount =44.94
     return ($basePrice - $discount) + $tax;
-
 }
 //echo "total page: " . calcularImpuesto(45.3 , 1.30) .  "\n";
 echo "total page: " . calculateTotal (45.3 , 1.30 , 0.80) .  "\n";
