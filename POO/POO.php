@@ -1,25 +1,25 @@
 <?php
 
-class Car {
+class car {
     var $ruedas;
     var $color;
     var $motor;
 
-    function Car (){                 //metodo constructor
+    function __construct(){      //metodo constructor
         $this->ruedas = 4;
         $this->color = " "; 
         $this->motor = 1600;
     }
-        function arrancar (){ 
+        function arrancar(){ 
             echo "estoy arrancando \n";
         }
-        function girar (){ 
+        function girar(){ 
             echo "estoy girando \n";
         }
-        function frenar () {
+        function frenar() {
             echo "estoy frenando \n";
         }
 }
-$neon =new Car ();
-$mazda =new Car ();
-$corvette =new Car ();
+$neon =new car();
+$mazda =new car();
+$corvette =new car();
