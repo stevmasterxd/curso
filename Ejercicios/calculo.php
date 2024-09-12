@@ -3,7 +3,6 @@ ini_set('declare(strict_types', '1');
 function calcularImpuesto(float $basePrice, float $taxPercentage): float
 {
    return $basePrice * ($taxPercentage / 100);
-    
 }
 
 function calculateDiscount(float $basePrice, float $discountPercentage): float
@@ -18,7 +17,9 @@ function calculateTotal(float $basePrice , float $taxPercentage , float $discoun
     
     return ($basePrice - $discount) + $tax;
 }
-echo "total page: " . calculateTotal (45.3 , 1.30 , 0.80) .  "\n";
+echo "total page: " . calculateTotal (45.3 , 1.30 , 0.80) . "\n";
+
+
 
 
 
