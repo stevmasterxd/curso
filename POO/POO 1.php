@@ -1,22 +1,32 @@
 <?php
-class person
+class Person
  {
     private $firstName;
     private $lastName;
 
-function __construct($firstName, $lastName)
+public function __construct($firstName, $lastName)
 {
     $this->firstName = $firstName;
     $this->lastName = $lastName;
 }
-function fullName()
+
+public function getFirstName()
+{
+    return  $this->firstName;
+}
+
+public function getLastName()
+{
+    return  $this->lastName;
+}
+
+public function getfullName()
 {
     return $this->firstName . " " . $this->lastName;
 }
 }
-$person1 = new person("Steven", "Bravo");
+$person1 = new Person("Steven", "Bravo");
+$person2 = new Person("Juan", "Gonzales");
 
-$person2 = new person("Juan", "Gonzales");
-
-echo "{$person1->fullName()} Es amigo de {$person2->fullName()}";
+echo "{$person1->getFullName()} Es amigo de {$person2->getFullName()}";
 
