@@ -1,25 +1,29 @@
 <?php
-
+ini_set('declare(strict_types', '1');
 class car {
-    var $ruedas;
-    var $color;
-    var $motor;
+    private $wheels; 
+    private $color;
+    private $engine;
 
-    function __construct(){      //metodo constructor
-        $this->ruedas = 4;
-        $this->color = " "; 
-        $this->motor = 1600;
+    function __construct($wheels , $color , $engine)
+    {  
+        $this->wheels = $wheels;
+        $this->color = $color;
+        $this->engine = $engine;
     }
-        function arrancar(){ 
+        public function arrancar(): void
+        { 
             echo "estoy arrancando \n";
         }
-        function girar(){ 
+        function girar(): void
+        { 
             echo "estoy girando \n";
         }
-        function frenar() {
+        function frenar(): void
+        {
             echo "estoy frenando \n";
         }
 }
-$neon =new car();
-$mazda =new car();
-$corvette =new car();
+$neon =new car(4 , "rojo" ,1600);
+$mazda =new car(4 , "amarrillo" , 2000);
+$corvette =new car(4 , "verde" , 1500);
