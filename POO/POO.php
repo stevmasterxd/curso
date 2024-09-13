@@ -1,11 +1,11 @@
 <?php
 ini_set('declare(strict_types', '1');
 class car {
-    private $wheels; 
-    private $color;
-    private $engine;
+    private string $wheels; 
+    private string $color;
+    private string $engine;
 
-    function __construct($wheels , $color , $engine)
+    function __construct(string $wheels, string $color, string $engine)
     {  
         $this->wheels = $wheels;
         $this->color = $color;
