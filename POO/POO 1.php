@@ -1,8 +1,9 @@
 <?php
+ini_set('declare(strict_types', '1');
 class Person
  {
-    private $firstName;
-    private $lastName;
+    private string $firstName;
+    private string $lastName;
 
 public function __construct($firstName, $lastName)
 {
