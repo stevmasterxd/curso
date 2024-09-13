@@ -4,7 +4,7 @@ ini_set('declare(strict_types', '1');
 abstract class Unit
 {  
     protected bool $aline =true;
-    protected $name;
+    protected string $name;
 
 public function __construct($name)
 {
