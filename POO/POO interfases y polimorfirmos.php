@@ -15,17 +15,17 @@ abstract class Unit {
         $this->name = $name;
     }
 
-    public function getName()
+    public function getName(): string
     {
         return $this->name;
     }
 
-    public function getHp()
+    public function getHp(): int
     {
         return $this->hp;
     }
 
-    public function move($direction)
+    public function move($direction): void
     {
         show("{$this->name} camina hacia $direction");
     }
