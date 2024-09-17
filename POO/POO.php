@@ -1,5 +1,5 @@
 <?php
-ini_set('declare(strict_types', '1');
+/*ini_set('declare(strict_types', '1');
 class car {
     private string $wheels; 
     private string $color;
@@ -26,4 +26,4 @@ class car {
 }
 $neon =new car(4 , "rojo" ,1600);
 $mazda =new car(4 , "amarrillo" , 2000);
-$corvette =new car(4 , "verde" , 1500);
+$corvette =new car(4 , "verde" , 1500);*/
