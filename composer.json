@@ -1,0 +1,17 @@
+{
+    "name": "dev/practices",
+    "description": "proyecto POO",
+    "type": "project",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Dev\\Practices\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "steven bravo"
+        }
+    ],
+    "require": {}
+}

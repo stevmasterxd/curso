@@ -10,7 +10,7 @@ abstract class Unit {
     protected $hp = 40;
     protected $name;
 
-    public function __construct($name)
+    public function __construct(string $name)
     {
         $this->name = $name;
     }
@@ -43,7 +43,7 @@ abstract class Unit {
         }
     }
 
-    public function die()
+    public function  die()
     {
         show("{$this->name} muere");
 
@@ -106,12 +106,12 @@ class Archer extends Unit
 
 interface Armor
 {
-    public function absorbDamage($damage);
+    public function absorbDamage(int $damage);
 }
 
 class BronzeArmor implements Armor
 {
-    public function absorbDamage($damage)
+    public function absorbDamage(int $damage): int
     {
         return $damage / 2;
     }
@@ -119,7 +119,7 @@ class BronzeArmor implements Armor
 
 class SilverArmor implements Armor
 {
-    public function absorbDamage($damage)
+    public function absorbDamage(int $damage): int
     {
         return $damage / 3;
     }
@@ -127,7 +127,7 @@ class SilverArmor implements Armor
 
 class CursedArmor implements Armor
 {
-    public function absorbDamage($damage)
+    public function absorbDamage(int $damage): int
     {
         return $damage * 2;
     }
