@@ -1,16 +1,17 @@
 {
-    "name": "dev/practices",
-    "description": "proyecto POO",
+    "name": "practices/oop",
+    "description": "proyecto de oop",
     "type": "project",
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "Dev\\Practices\\": "src/"
+            "Practices\\Oop\\": "src/"
         }
     },
     "authors": [
         {
-            "name": "steven bravo"
+            "name": "steven",
+            "email": "stevenmanuel1234@gmail.com"
         }
     ],
     "require": {}

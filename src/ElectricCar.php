@@ -1,5 +1,6 @@
 <?php
-ini_set('declare(strict_types', '1');
+declare(strict_types=1);
+namespace Practices\Oop;
 
 class ElectricCar extends Car implements ElectricVehicle 
 {

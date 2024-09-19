@@ -1,10 +1,11 @@
 <?php
-ini_set('declare(strict_types', '1');
+declare(strict_types=1);
 
-spl_autoload_register (function($className)
-{
-    require "src/$className.php";
-});
+require __DIR__ . '/../vendor/autoload.php';
+
+use Practices\Oop\Car;
+use Practices\Oop\Boat;
+use Practices\Oop\ElectricCar;
 
 $car = new Car("Toyota", "Corolla");
 
@@ -19,8 +20,6 @@ $ElectricCar = new ElectricCar("Tesla", "Model S");
 $ElectricCar->move();
 
 $ElectricCar->charging();
-
-
 
 
 
