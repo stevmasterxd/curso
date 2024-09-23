@@ -15,14 +15,8 @@ $boat = new Boat("Yamaha", "WaveRunner");
 
 $boat->move();
 
-$ElectricCar = new ElectricCar("Tesla", "Model S");
+$ElectricCar = new ElectricCar("Tesla", "Model S", 100);
 
 $ElectricCar->move();
 
 $ElectricCar->charging();
-
-
-
-
-
-
