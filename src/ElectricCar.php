@@ -14,7 +14,7 @@ class ElectricCar extends Car implements ElectricVehicle
 
     public function charging(): void 
     {
-        if ($this->batteryLevel >= 100) {
+        if ($this->batteryLevel <= 100) {
             echo "The electric car $this->brand $this->model is charging.\n";
         } else {
             echo "The electric car $this->brand $this->model does not need charging.\n";
